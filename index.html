@@ -80,15 +80,58 @@ li {
 
 
 
+<style> 
+.hidden-info {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden-info.show {
+  display: block;
+  opacity: 1;
+}
+
+<style>
+    /* Style for the button */
+    .reveal-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    /* Initially hide the text */
+    .reveal-text {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    /* Reveal the text when the button is hovered */
+    .reveal-button:hover + .reveal-text {
+      display: block;
+    }
+  </style>
+
+<button class="reveal-button" style="font-size: 18px; padding: 10px 20px; width: auto; height: 50px;border-radius:15px;background-color:#87CEFA;font-family: courier;">About Me</button>
+
+<div class="reveal-text" style="text-align: left;">
+    <p>I am a graduate student at Georgetown University, earning an MS in Data Science and Analytics. I completed my BA at Bowdoin College in Brunswick, Maine, graduating in 2024 with degrees in Physics and Computer Science. I also completed a minor in Education. </p>
+    <p>As part of my Computer Science major, I completed an Advanced Independent Study with Professor Sarah Harmon on the intersection between LLMs and entertainment, after which I presented my findings to the International Conference on Interactive Digital Storytelling. I also completed two summers of Software Test Engineering at Freddie Mac and Paramount Global. At Bowdoin, I was a member of the Varsity Field Hockey and Women’s Lacrosse teams, serving as captain of the field hockey team my senior year. </p>
+    <p>This love of sports has driven me to work with various teams at Georgetown on their operations teams. I want to translate the skills she has learned throughout my time at Georgetown and Bowdoin into a profession in sports analytics.</p></div>
+<div>
 <img src = "images/me.jpeg" alt = "ME!" width = 200 align = "right">
 
-<h2> About me</h2>
 
-<p>I am a graduate student at Georgetown University, earning an MS in Data Science and Analytics. I completed my BA at Bowdoin College in Brunswick, Maine, graduating in 2024 with degrees in Physics and Computer Science. I also completed a minor in Education. </p>
-<p>As part of my Computer Science major, I completed an Advanced Independent Study with Professor Sarah Harmon on the intersection between LLMs and entertainment, after which I presented my findings to the International Conference on Interactive Digital Storytelling. I also completed two summers of Software Test Engineering at Freddie Mac and Paramount Global. At Bowdoin, I was a member of the Varsity Field Hockey and Women’s Lacrosse teams, serving as captain of the field hockey team my senior year. </p>
-<p>This love of sports has driven me to work with various teams at Georgetown on their operations teams. I want to translate the skills she has learned throughout my time at Georgetown and Bowdoin into a profession in sports analytics.</p>
-
-<h2> Education </h2>
+<button class="reveal-button" style="font-size: 18px; padding: 10px 20px; width: auto; height: 50px;border-radius:15px;background-color:#87CEFA;font-family: courier;">Education</button>
+<div class="reveal-text" style="text-align: left;">
 <p style = "font-size: 16px">Georgetown University: MS in Data Science and Analytics</p>
 <i style = "font-family: serif"> Involvements:
     <li>Athletic Events Operation Aid</li>
@@ -101,7 +144,7 @@ li {
     <li>Goalie for Women's Varisty Lacrosse</li>
     <li>Sports Information Aid</li>
 </i>
-
+</div>
 <hr>
 
 <div id="contentBox" style="margin:0px auto; width:100%">
@@ -161,7 +204,7 @@ li {
 <div id="contentBox" style="margin:0px auto; width:100%">
 
     <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
-    <div id="column1" style="float:left; text-align:center; margin:5px; width:48%;background-color:#87CEEB;border-radius:15px;">
+    <div id="column1" style="float:left; text-align:center; margin:5px; width:48%;background-color:#87CEEB;border-radius:15px;font-size:16px">
         <h2>Databases</h2>
         <li>Relational Databases</li>
         <li>MongoDB</li>

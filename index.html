@@ -1,77 +1,129 @@
-<h1> Sophia Rutman </h1>
-Welcome to my personal website! 
+<!DOCTYPE html> 
+<html>
+    <div class="dropdown">
+        <style>
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              padding: 12px 16px;
+              z-index: 1;
+            }
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
 
-<img src = "images/me.jpeg" alt = "ME!">
+            .dropdown:hover .dropbtn {
+                background-color: #3e8e41;
+            }            
+        </style>
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="projects.html">My Projects</a>
+          <a href="conferences.html">My Conferences/Datathons</a>
+          <a href="myteams.html">My Teams</a>
+        </div>
+      </div>
 
-<h2> About me</h2>
+<h1> Welcome to my personal website! </h1>
 
-I am a graduate student at Georgetown University earning an MS in Data Science and Analytics. I completed my BA at Bowdoin College in Brunswick, Maine, graduating in 2024 with degrees in Physics and Computer Science. I also completed a minor in Education. As part of my Computer Science major, I completed an Advanced Independent Study with Professor Sarah Harmon on the intersection between LLMs and entertainment, after which I presented my findings to the International Conference on Interactive Digital Storytelling. I also completed two summers of Software Test Engineering at Freddie Mac and Paramount Global. At Bowdoin, I was a member of the Varsity Field Hockey and Women’s Lacrosse teams during her undergraduate years, serving as captain of the field hockey team her senior year. This love of sports has driven me to work with various teams at Georgetown on their operations teams. I want to translate the skills she has learned throughout her time at Georgetown and Bowdoin into a profession in sports analytics.
+<a href = "pdfs/Sophia Rutman Analytics.pdf" style="display: block; text-align: left;"> <button style ="text-align: left;">My resume </button></a>
+<a href = "https://www.linkedin.com/in/sophia-rutman/"> <button style ="text-align: right;">My Linkedin</button> </a>
+
+<img src = "images/me.jpeg" alt = "ME!" width = 200 align = "right">
+
+<h2> About me </h2>
+
+I am a graduate student at Georgetown University earning an MS in Data Science and Analytics. I completed my BA at Bowdoin College in Brunswick, Maine, graduating in 2024 with degrees in Physics and Computer Science. I also completed a minor in Education. As part of my Computer Science major, I completed an Advanced Independent Study with Professor Sarah Harmon on the intersection between LLMs and entertainment, after which I presented my findings to the International Conference on Interactive Digital Storytelling. I also completed two summers of Software Test Engineering at Freddie Mac and Paramount Global. At Bowdoin, I was a member of the Varsity Field Hockey and Women’s Lacrosse teams during her undergraduate years, serving as captain of the field hockey team her senior year. This love of sports has driven me to work with various teams at Georgetown on their operations teams. I want to translate the skills she has learned throughout my time at Georgetown and Bowdoin into a profession in sports analytics.
 
 <h2> Education </h2>
-2026: Georgetown University’s Graduate School of Arts and Sciences
+Georgetown University’s Graduate School of Arts and Sciences
 
-2024: Bowdoin College: BA in Physics and Computer Science with a Minor in Education
+<br><i> Involvements:
+    <li>Athletic Events Operation Aid</li>
+    <li>Graduate Teaching Assistant for DSAN5900: Digital Storytelling</li>
+    <li>Georgetown Women in Data Science: Communications Team</li>
+</i>
+<br>
+Bowdoin College: BA in Physics and Computer Science with a Minor in Education
+<br><i>Involvements: 
+    <li>Captain of Women's Varsity Field Hockey Team</li>
+    <li>Goalie for Women's Varisty Lacrosse</li>
+    <li>Sports Information Aid</li>
+</i>
+<div id="contentBox" style="margin:0px auto; width:100%">
 
-<h2>Interests</h2>
-<li>Large Language Models</li>
-<li>Predictive Analytics</li>
-<li>Sports Operations and Management</li>
-<li>Business Analytics within the Sports Industry</li>
+    <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
+       <div id="column1" style="float:left; margin:0; width:50%;">
+        <h2>Interests</h2>
+        <br>
+        <li>Predictive Analytics</li>
+        <li>Sports Operations and Management</li>
+        <li>Business Analytics within the Sports Industry</li></ul>
+        </div>
+   
+       <div id="column2" style="float:left; margin:0;width:50%;">
+        <h2> Languages </h2>
+        <li>Python</li>
+        <li>R</li>
+        <li>Ruby</li>
+        <li>Java</li>
+        <li>C/C++</li>
+        <li>SQL</li>
+        <li>HTML/CSS/JavaScript</li>
+        </div>
+   </div>
+</style>
 
-<h2> Languages </h2>
-<li>Python</li>
-<li>R</li>
-<li>Ruby</li>
-<li>Java</li>
-<li>C/C++</li>
-<li>SQL</li>
-<li>HTML/CSS/JavaScript</li>
+<h2>Libraries:</h2>
 
-<h2>Libraries</h2>
-<h3>Python</h3>
-<li>Tensorflow</li>
-<li>Matplotlib</li>
-<li>Pandas</li>
-<li>Numpy</li>
-<li>Sklearn</li>
+<div id="contentBox" style="margin:0px auto; width:100%">
+       <div id="column1" style="float:left; margin:0; width:50%;">
+        <h3>Python</h3>
+        <li>Tensorflow</li>
+        <li>Pandas</li>
+        <li>Numpy</li>
+        <li>Sklearn</li>
+        <li>Seaborn</li>
+        <li>Matplotlib</li>
+        </div>
+   
+       <div id="column2" style="float:left; margin:0;width:50%;">
+        <h3>R</h3>
+        <li>tidyverse</li>
+        <li>dplyr</li>
+        <li>ggplot2</li>
+        <br>
+        <br>
+        <br>
 
-<h3>R</h3>
-<li>tidyverse</li>
-<li>dplyr</li>
-<li>ggplot2</li>
+        </div>
+   </div>
+</style>
 
-<h2>Databases</h2>
-<li>Relational Databases</li>
-<li>MongoDB</li>
-<li>Snowflake</li>
+<div id="contentBox" style="margin:0px auto; width:100%">
 
-<h2> Collaboration</h2>
-<li>Git/Github</li>
-<li>AGILE Methodology</li>
-<li>Scrum</li>
-
-<h2> My Resume: </h2> <a href = "pdfs/Sophia Rutman Analytics.pdf"> My resume </a>
-<h2> My Linkedin: </h2> <a href = "https://www.linkedin.com/in/sophia-rutman/"> My Linkedin </a>
-
-<h2> My projects</h2>
-
-<li>Sports Betting and Tribal Gambling <a href = "srutman.georgetown.domains"> Project Website </a></li>
-<li>Capitol to Capital: Using Lobbying Data as a Technical Indicator <a href = "https://github.com/sophiarutman/FML-Final-Proj"> Github Page</a></li>
-<li>Creating a Batting Order <a href = "https://github.com/sophiarutman/BaseballRepo/tree/main/BaseballApp"> Github Page</a></li>
-
-
-<h2> Conferences </h2>
-
-<li> International Conference for Interactive Digital Storytelling</li>
-Link to paper: <a href = "https://link.springer.com/chapter/10.1007/978-3-031-47655-6_13"> Published Paper</a>
-
-<li> Code the Curb</li>
-<img src = "images/codethecurb1.jpeg" alt = "Code the Curb Presentation" width="70" height="50"> 
-<img src = "images/codethecurb2.jpeg" alt = "Code the Curb Presenation" width="70" height="50">
-
-<h2> Datathons </h2>
-
-<li>DatakindDC</li>
-Volunteer Match
-
-
+    <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
+       <div id="column1" style="float:left; margin:0; width:50%;">
+        <h2>Databases</h2>
+        <li>Relational Databases</li>
+        <li>MongoDB</li>
+        <li>Snowflake</li>
+        </div>
+        <div id="column2" style="float:left; margin:0;width:50%;">
+        <h2> Collaboration</h2>
+        <li>Git/Github</li>
+        <li>AGILE Methodology</li>
+        <li>Scrum</li>
+        </div>
+   </div>
+</style>
+</html>

@@ -1,42 +1,53 @@
 <!DOCTYPE html> 
 <html>
-    <div class="dropdown">
-        <style>
-            .dropdown {
-              position: relative;
-              display: inline-block;
-            }
-            
-            .dropdown-content {
-              display: none;
-              position: absolute;
-              background-color: #f9f9f9;
-              min-width: 160px;
-              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-              padding: 12px 16px;
-              z-index: 1;
-            }
-            
-            .dropdown:hover .dropdown-content {
-              display: block;
-            }
 
-            .dropdown:hover .dropbtn {
-                background-color: #3e8e41;
-            }            
-        </style>
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-          <a href="projects.html">My Projects</a>
-          <a href="conferences.html">My Conferences/Datathons</a>
-          <a href="myteams.html">My Teams</a>
-        </div>
-      </div>
+<style>
+/* Style the tab buttons */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+}
 
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+</style>
+<a href = "projects.html"></a>
+  <button class="tablink">My projects</button>
+</a>
+<a href = "conferences.html"></a>
+  <button class="tablink">My Conferences</button>
+</a>
+<a href = "myteams.html"></a>
+  <button class="tablink">My Teams</button>
+</a>
 <h1> Welcome to my personal website! </h1>
 
-<a href = "pdfs/Sophia Rutman Analytics.pdf" style="display: block; text-align: left;"> <button style ="text-align: left;">My resume </button></a>
-<a href = "https://www.linkedin.com/in/sophia-rutman/"> <button style ="text-align: right;">My Linkedin</button> </a>
+<a href="pdfs/Sophia Rutman Analytics.pdf" style="display: inline-block; text-align: left;">
+    <button style="font-size: 18px; padding: 15px 30px; width: auto; height: 50px;">My Resume</button>
+</a>
+  
+  <a href="https://www.linkedin.com/in/sophia-rutman/" style="display: inline-block; text-align: right;">
+    <button style="font-size: 18px; padding: 15px 30px; width: auto; height: 50px;">My Linkedin</button>
+</a>
+  
+<br><br><br>
 
 <img src = "images/me.jpeg" alt = "ME!" width = 200 align = "right">
 
@@ -126,4 +137,8 @@ Bowdoin College: BA in Physics and Computer Science with a Minor in Education
         </div>
    </div>
 </style>
+
+<h2>Contact Me!</h2>
+Please reach out over <a href="mailto:srutman02@gmail.com">email!</a>
+
 </html>

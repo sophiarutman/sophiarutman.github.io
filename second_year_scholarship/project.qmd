@@ -27,7 +27,7 @@ Means of attack can also be difficult to ascertain, but to understand the analys
 
 Finally, lets take a look at the organization and gender distribution across the globe. These dashboards 
 
-<iframe src="chloropleth_map_org.html" width="100%" height="600px"></iframe>
+<iframe src="choropleth_map_org.html" width="100%" height="600px"></iframe>
 <iframe src="choropleth_map_with_dropdown3.html" width="100%" height="600px"></iframe>
 
 # Exploratory Data Analysis

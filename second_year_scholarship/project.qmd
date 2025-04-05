@@ -58,11 +58,20 @@ All of these combined factors lead to the questions we will tackle in this analy
 
 After looking at the correlation matrices above, which factors are most heavily correlated? How can aid workers use these to avoid danger? 
 
-## Organizations
-
+## Incidents vs. Organizations
 First, this analysis will explore the connections between incidents and organizations. In the correlation matrix above, we can see that United Nations workers have the heaviest correlation with the number of workers affected. A common misconception is that the UN has the greatest number of aid workers affected, but this is not the case. We can see these different correlations below. 
 
 <iframe src="cumulative_total_affected.html" width="100%" height="600px"></iframe>
 
+The United Nation does not have the most similar slope to the total affected out of all organizations, but it is the most heavily correlated. We can see why at the points in the graph around the gray dotted lines. As the total affected and total killed form undifferentiable corners, so does the UN line. They change very similarly over time, leading to the high correlation values. The second highest correlation is associated with INGO, which also demonstrated these similarities, to a lesser extent. The correlation here is based on a similarity in first derivative. 
+
+# Incidents vs. Gender
+
+# Location vs. Motive vs. Attack Context
+
 # Reporting Analysis
+
+# Conclusions
+
+# Recommendations
 

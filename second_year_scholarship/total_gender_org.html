@@ -335,7 +335,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         
 </div>
 </div>
-<div id="cell-5" class="cell" data-execution_count="63">
+<div id="cell-5" class="cell" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_unknown <span class="op">=</span> df[[<span class="st">"UN"</span>, <span class="st">"INGO"</span>, <span class="st">"ICRC"</span>, <span class="st">"NRCS and IFRC"</span>, <span class="st">"NNGO"</span>, <span class="st">"Other"</span>, <span class="st">"Gender Unknown"</span>]].dropna()</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Plotly figure</span></span>
@@ -371,19 +371,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">'Index (Time or Observations)'</span>,</span>
 <span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">'Cumulative Sum'</span>,</span>
 <span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>    hovermode<span class="op">=</span><span class="st">'closest'</span>,</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    template<span class="op">=</span><span class="st">'plotly_dark'</span>,  <span class="co"># Optional: Choose your theme</span></span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the figure as an interactive HTML</span></span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>fig.write_html(<span class="st">"unknown_gender.html"</span>)</span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the saved file directly in Jupyter Notebook</span></span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> IFrame</span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>IFrame(<span class="st">"unknown_gender.html"</span>, width<span class="op">=</span><span class="dv">800</span>, height<span class="op">=</span><span class="dv">600</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="63">
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the figure as an interactive HTML</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>fig.write_html(<span class="st">"unknown_gender.html"</span>)</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the saved file directly in Jupyter Notebook</span></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> IFrame</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>IFrame(<span class="st">"unknown_gender.html"</span>, width<span class="op">=</span><span class="dv">800</span>, height<span class="op">=</span><span class="dv">600</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="69">
 
         <iframe width="800" height="600" src="unknown_gender.html" frameborder="0" allowfullscreen=""></iframe>
         
+</div>
+</div>
+<div id="cell-6" class="cell" data-execution_count="68">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming 'df' is the DataFrame with your data</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Calculate the sum of each organization</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>sum_orgs <span class="op">=</span> df[[<span class="st">"UN"</span>, <span class="st">"INGO"</span>, <span class="st">"ICRC"</span>, <span class="st">"NRCS and IFRC"</span>, <span class="st">"NNGO"</span>, <span class="st">"Other"</span>]].<span class="bu">sum</span>()</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Calculate the sum of the "Gender Unknown" category</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>sum_gender_unknown <span class="op">=</span> df[<span class="st">"Gender Unknown"</span>].<span class="bu">sum</span>()</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 3: Calculate the percentage of "Gender Unknown" for each organization</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>percentage_unknown <span class="op">=</span> (sum_gender_unknown <span class="op">/</span> sum_orgs.<span class="bu">sum</span>()) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 4: Output the results</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>percentage_unknown</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="68">
+<pre><code>45.4800879550452</code></pre>
 </div>
 </div>
 

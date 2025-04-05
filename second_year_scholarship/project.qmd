@@ -1,0 +1,68 @@
+---
+title: Second Year Scholarship Mini-Project 
+
+format: 
+    html: 
+        embed-resources: true
+        toc: true
+---
+
+# Introduction 
+
+The following webpage takes a deep dive into the Aid Worker Security Database, which describes violence against aid workers across the globe. The code describes violence against aid workers from different organizations based on attack type and context, country, organization, whether workers were national or international, and gender amongst other variables. 
+
+The following analysis looks to guide you through the distribution of attacks across the globe, and ultimately provide the general viewer with more information about the safety of aid workers and what can be done to ensure they are able to save lives as safely as possible. 
+
+Lets first take a look at the different variables included in the dataset. With each incident provided, the reporter of said incident provides a short description of what happened. Click on any of the points below to understand what these incidents entail. 
+
+<iframe src="description_samples.html" width="100%" height="600px"></iframe>
+
+Even further, the dataset provides the amount of national and international aid workers harmed during an incident. These numbers tend to be more inaccurate than other columns, as it is harder to decide upon an aid worker's nationality than their organization (which is usually posted on their clothing) or gender. Nonetheless, it is important to gain a broad understanding of countries where the most aid workers are impacted, both international and national. The dashboard below delves into these numbers. 
+
+<iframe src="choropleth_map_with_dropdown.html" width="100%" height="600px"></iframe>
+
+Means of attack can also be difficult to ascertain, but to understand the analysis presented below, it is important that the viewer generally understands countries where different attacks are most common. 
+
+<iframe src="choropleth_map_with_dropdown2.html" width="100%" height="600px"></iframe>
+
+Finally, lets take a look at the organization and gender distribution across the globe. These dashboards 
+
+<iframe src="chloropleth_total_affected.html" width="100%" height="600px"></iframe>
+<iframe src="choropleth_map_with_dropdown3.html" width="100%" height="600px"></iframe>
+
+# Exploratory Data Analysis
+
+Similar to many projects, EDA must be completed to begin to understand meaningful trends. This section was technically started in the introduction, but we continue to explore the distribution of data here in the form of a correlation matrix. This matrix is included below. 
+
+<iframe src="corr_matrix.html" width="100%" height="600px"></iframe>
+
+Although large and fairly overwhelming, this matrix provides many meaningful connections this page explores, particularly among the gender, attack context, location, and motive columns. We can see that many of the columns have some sort of correlation, especially in the zoomed in matrices below: 
+
+<iframe src="corr_matrix2.html" width="100%" height="600px"></iframe>
+
+In this first matrix, we can see strong correlation between different organization and the amount of workers affected, wounded, kidnapped, and killed. We can also see clear connections between gender and both of those variables. In particular, we see connections between Gender Unknown and many variables. This infers a reporting problem (to be explored). 
+
+<iframe src="corr_matrix3.html" width="100%" height="600px"></iframe>
+
+In this second matrix, we see correlations between location, motive, and context. The strongest correlation, however, is between Location Unknown and Attack context Unknown which again displays the weak reporting by the aid workers. 
+
+Reporting is not their first priority - aid workers' main responsibility is to attend to the health of those in need. There are a few instances, however, where quick adjustments can be made to make a better database for later analysis. 
+
+# Research Questions
+All of these combined factors lead to the questions we will tackle in this analysis: 
+
+1. Which factors are most heavily correlated with different incidents? Although this analysis not attempt to prove causation, which avenues should be explored in the future to implement preventative measures?
+2. How can reporting be improved for future reference? What are the most efficient ways this can be done? 
+
+# Incident Analysis
+
+After looking at the correlation matrices above, which factors are most heavily correlated? How can aid workers use these to avoid danger? 
+
+## Organizations
+
+First, this analysis will explore the connections between incidents and organizations. In the correlation matrix above, we can see that United Nations workers have the heaviest correlation with the number of workers affected. A common misconception is that the UN has the greatest number of aid workers affected, but this is not the case. We can see these different correlations below. 
+
+<iframe src="cumulative_total_affected.html" width="100%" height="600px"></iframe>
+
+# Reporting Analysis
+

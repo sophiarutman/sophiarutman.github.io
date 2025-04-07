@@ -1,5 +1,6 @@
 ---
 title: Second Year Scholarship Mini-Project 
+subtitle: If you are on a mac, please open using Safari!
 
 format: 
     html: 

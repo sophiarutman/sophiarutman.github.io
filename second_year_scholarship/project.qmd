@@ -9,9 +9,9 @@ format:
 
 # Introduction 
 
-The following webpage takes a deep dive into the Aid Worker Security Database, which describes violence against aid workers across the globe. The code describes violence against aid workers from different organizations based on attack type and context, country, organization, whether workers were national or international, and gender amongst other variables. 
+The following webpage takes a deep dive into the Aid Worker Security Database, which describes violence against aid workers across the globe. The code categorizes violence against aid workers from different organizations based on attack type and context, country, organization, whether workers were national or international, and gender amongst other variables. 
 
-The following analysis looks to guide you through the distribution of attacks across the globe, and ultimately provide the general viewer with more information about the safety of aid workers and what can be done to ensure they are able to save lives as safely as possible. 
+The following analysis looks to guide you through the distribution of these incidents across the globe, and ultimately provide the general viewer with more information about potential actions different organizations can take to ensure they are able to save lives as safely as possible. 
 
 Lets first take a look at the different variables included in the dataset. With each incident provided, the reporter of said incident provides a short description of what happened. Click on any of the points below to understand what these incidents entail. 
 
@@ -25,22 +25,22 @@ Means of attack can also be difficult to ascertain, but to understand the analys
 
 <iframe src="choropleth_map_with_dropdown2.html" width="100%" height="600px"></iframe>
 
-Finally, lets take a look at the organization and gender distribution across the globe. These dashboards 
+Finally, lets take a look at the humanitarian organization and gender distribution within incidents across the globe.
 
 <iframe src="choropleth_map_org.html" width="100%" height="600px"></iframe>
 <iframe src="choropleth_map_with_dropdown3.html" width="100%" height="600px"></iframe>
 
 # Exploratory Data Analysis
 
-Similar to many projects, EDA must be completed to begin to understand meaningful trends. This section was technically started in the introduction, but we continue to explore the distribution of data here in the form of a correlation matrix. This matrix is included below. 
+This section was technically started in the introduction, but we continue to explore the distribution of data here in the form of correlation matrices. The first matrix below includes all variables. After ascertaining which portions of the plot showed the most connections, the following two matrices become more focused.  
 
 <iframe src="corr_matrix.html" width="100%" height="600px"></iframe>
 
-Although large and fairly overwhelming, this matrix provides many meaningful connections this page explores, particularly among the gender, attack context, location, and motive columns. We can see that many of the columns have some sort of correlation, especially in the zoomed in matrices below: 
+Although large and fairly overwhelming, this matrix provides many meaningful connections this page explores, particularly among the gender, attack context, location, and motive columns. We can see that many of the columns have some sort of correlation, especially below. 
 
 <iframe src="corr_matrix2.html" width="100%" height="600px"></iframe>
 
-In this first matrix, we can see strong correlation between different organization and the amount of workers affected, wounded, kidnapped, and killed. We can also see clear connections between gender and both of those variables. In particular, we see connections between Gender Unknown and many variables. This infers a reporting problem (to be explored). 
+In this smaller matrix, we can see strong correlation between different organizations and the amount of workers affected, wounded, kidnapped, and killed. We can also see clear connections between gender and both of those variables. In particular, we see connections between Gender Unknown and many variables. This infers a reporting problem (to be explored). 
 
 <iframe src="corr_matrix3.html" width="100%" height="600px"></iframe>
 
@@ -59,11 +59,11 @@ All of these combined factors lead to the questions we will tackle in this analy
 After looking at the correlation matrices above, which factors are most heavily correlated? How can aid workers use these to avoid danger? 
 
 ## Incidents vs. Organizations
-First, this analysis will explore the connections between incidents and organizations. In the correlation matrix above, we can see that United Nations workers have the heaviest correlation with the number of workers affected. A common misconception is that the UN has the greatest number of aid workers affected, but this is not the case. We can see these different correlations below. 
+First, this analysis will explore the connections between incidents and organizations. In the correlation matrix above, we can see that United Nations workers have the heaviest correlation with the number of workers affected. A common misconception is that this high indication translates to the UN having the greatest number of aid workers affected, but this is not the case. Correlation is defined by the similarity in movement between two different variables, not necessarily the similarity in exact quality (although there is a possibility of this property with high correlations). We can see these different correlations below. 
 
 <iframe src="cumulative_total_affected.html" width="100%" height="600px"></iframe>
 
-The United Nation does not have the most similar slope to the total affected out of all organizations, but it is the most heavily correlated. We can see why at the points in the graph around the gray dotted lines. As the total affected and total killed form undifferentiable corners, so does the UN line. They change very similarly over time, leading to the high correlation values. The second highest correlation is associated with INGO, which also demonstrated these similarities, to a lesser extent. The correlation here is based on a similarity in first derivative. 
+The United Nation does not have the most similar overall slope to the total affected out of all organizations, but it is the most heavily correlated. We can see why at the points in the graph around the gray dotted lines. As the total affected and total killed form undifferentiable corners, so does the UN line. Their slope's change very similarly over time, leading to the high correlation values. The second highest correlation is associated with INGO, which also demonstrated these similarities, to a lesser extent. 
 
 ## Incidents vs. Gender
 
@@ -98,9 +98,31 @@ In the first zoomed in correlation matrix, gender unknown has strong correlation
 
 <iframe src="unknown_gender.html" width="100%" height="600px"></iframe>
 
-This plot demonstrates the connection between UN workers affected and gender unknown reporting. They are clearly most closely connected out of all aid organizations. There could be a variety of reasons as to why this is true. One strong case is the number of different sub organizations comprised under "UN" in this database: FAO, IOM, UNFPA, UNHCR, UNICEF, UNDP, WFP, WHO, as well as UNRWA, OCHA and UNMAS. Although under the same umbrella, each sub-organization most likely has a unique governing body. The layers of leadership here may lead to reporting falling through the cracks. If the UN improves their ghender reporting rates, gender-based analysis can be greatly improved in the future. 
+This plot demonstrates the connection between UN workers affected and gender unknown reporting. They are clearly most closely connected out of all aid organizations. There could be a variety of reasons as to why this is true. One strong case is the number of different sub organizations comprised under "UN" in this database: FAO, IOM, UNFPA, UNHCR, UNICEF, UNDP, WFP, WHO, as well as UNRWA, OCHA and UNMAS. Although under the same umbrella, each sub-organization most likely has a unique governing body. The layers of leadership here may lead to reporting falling through the cracks. If the UN improves their gender reporting rates, gender-based analysis can be greatly improved in the future. 
 
 # Conclusions
+
+The two research questions related to potential connections between incidents and different variables, and where reporting can be improved most easily. The AWSD answered these questions upon analysis. 
+
+1. Which factors are most heavily correlated with different incidents? Although this analysis not attempt to prove causation, which avenues should be explored in the future to implement preventative measures?
+   
+This report found clear connections between location, motive, and attack context. Raids, mob violence, and and combat/crossfire are most closely associated with project sites, and individual attacks are highly correlated with a home location. The motivation with the highest correlation was economic motives at home and public locations, and incidental attacks with crossfire and public locations. 
+
+Additionally, the United Nations workers had the highest correlation with the number of aid workers affected, as well as killed. INGO has the highest correlation with workers wounded, as well as the second highest with the two categories mentioned above. 
+
+All of these connections can be due to a variety of factors not addressed by the database or this analysis, or factors that were mainly labelled as unknown, such as nationality, gender, or political/economic context of the country in which they were attacked. It is also related to the actors in each particular incident, which was not explored in this analysis due to the nature of actor identification - its difficulty makes for many unknown or inaccurate reports. 
+
+However, we can use the connections spotted in these various line, bar, and correlation graphs to begin to create safety measures for aid workers. For example, the extreme correlation between incidental attacks and crossfire can lead to a different location of aid workers in an active battlefield. The connection between economic motivated - attacks within the home can begin to shift where large sums of money or import documents are stored. These possibilities are further explored in the recommendations section. 
+
+This analysis was successful in finding potential avenues that can be explored to improve safety measures for humanitarian workers looking to aid the country in which they are stationed. 
+
+2. How can reporting be improved for future reference? What are the most efficient ways this can be done? 
+
+The most efficient ways to improve reporting are through location and gender reporting. These two categories have extremely high rates of unreported data, and are easily ascertained once first responded step onto the scene. 
+
+Whether aid workers were male or female had little to no correlation with other variables, but this could very well be because of the minimal data available to form these connections. With a higher rate of reporting, further analysis can be done to better protect aid workers facing a higher threat due to their gender. A large source of this uncertaintly is United Nations reporting. No matter the reason, if this organization improves their database, analysts can begin to build models that aid their cause and protect their workers. 
+
+On the other hand, location did have correlations with various variables, such as motive and attack context. With better location reporting, humanitarian organizations can better decide where to store money, documents, and even important people to ensure every part involved faces a minimal threat of danger. They can also better allocate security resources. 
 
 # Recommendations
 

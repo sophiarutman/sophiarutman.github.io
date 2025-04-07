@@ -104,7 +104,7 @@ This plot demonstrates the connection between UN workers affected and gender unk
 
 The two research questions related to potential connections between incidents and different variables, and where reporting can be improved most easily. The AWSD answered these questions upon analysis. 
 
-1. Which factors are most heavily correlated with different incidents? Although this analysis not attempt to prove causation, which avenues should be explored in the future to implement preventative measures?
+1. *Which factors are most heavily correlated with different incidents? Although this analysis not attempt to prove causation, which avenues should be explored in the future to implement preventative measures?*
    
 This report found clear connections between location, motive, and attack context. Raids, mob violence, and and combat/crossfire are most closely associated with project sites, and individual attacks are highly correlated with a home location. The motivation with the highest correlation was economic motives at home and public locations, and incidental attacks with crossfire and public locations. 
 
@@ -116,7 +116,7 @@ However, we can use the connections spotted in these various line, bar, and corr
 
 This analysis was successful in finding potential avenues that can be explored to improve safety measures for humanitarian workers looking to aid the country in which they are stationed. 
 
-2. How can reporting be improved for future reference? What are the most efficient ways this can be done? 
+2. *How can reporting be improved for future reference? What are the most efficient ways this can be done?* 
 
 The most efficient ways to improve reporting are through location and gender reporting. These two categories have extremely high rates of unreported data, and are easily ascertained once first responded step onto the scene. 
 

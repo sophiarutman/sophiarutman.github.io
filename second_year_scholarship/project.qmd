@@ -65,10 +65,23 @@ First, this analysis will explore the connections between incidents and organiza
 
 The United Nation does not have the most similar slope to the total affected out of all organizations, but it is the most heavily correlated. We can see why at the points in the graph around the gray dotted lines. As the total affected and total killed form undifferentiable corners, so does the UN line. They change very similarly over time, leading to the high correlation values. The second highest correlation is associated with INGO, which also demonstrated these similarities, to a lesser extent. The correlation here is based on a similarity in first derivative. 
 
-# Incidents vs. Gender
-sdfkhl
+## Incidents vs. Gender
 
-# Location vs. Motive vs. Attack Context
+Similarly, the plot below looks for potential connections between gender and those affected by safety incidents. 
+
+<iframe src="cumulative_total_affected_gender.html" width="100%" height="600px"></iframe>
+
+As the correlation plot indicates, the "Unknown" gender category varies the most similarly to the total killed and affected, while female and male categories only weakly correlate with any of these categories. Therefore, this report is unable to provide any insights on gendered attacks across the globe. 
+
+Another insight from this graph and the gender by country graph in the introduction is the number of attacks on males vs. females. These numbers show that male aid workers are involved in far more incidents than women. This can be due to a variety of reasons, such as the amount of female vs. male aid workers in general, or their geographic distribution. This dataset does not provide enough data to make any conclusions on this front. 
+
+## Location vs. Motive vs. Attack Context
+
+There are clear correlations between these three matrices, as shown by the second zoomed in correlation matrix above. As a sanity check, many of the highest correlations are logical. For example, attacks that are incidental have a high correlation with a context of combat/crossfire. It seems they were hit by friendly fire accidently, which is common in battle. In addition, raids had the highest correlations with homes, offices, and project sites, and are anticorrelated with road incidents. These locations are the most likely to contain valuable information from stakeholders. Public locations are not popular destinations for raids because they do not contain anything of value. 
+
+We also see some other interesting correlations that are not necessarily intuitive. For example, individual attacks are correlated with economic motives, and home/public locations. These attacks occuring in public are not necessarily intuitive, as targetted assaults are more difficult with a large number of bystanders. 
+
+Finally, project sites are associated with a large number of attack contexted, including raids, mob violence, and combat/crossfire. Project sites are described as villages, camps, distribution points, hospitals, etc. Essentially, they describe points of essential function. Due to the variety of locations, it follows that a variety of types of attacks occur under this category. The only correlation with motives is an extremely weak correlation with the political category. 
 
 # Reporting Analysis
 

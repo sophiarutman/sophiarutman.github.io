@@ -66,6 +66,7 @@ First, this analysis will explore the connections between incidents and organiza
 The United Nation does not have the most similar slope to the total affected out of all organizations, but it is the most heavily correlated. We can see why at the points in the graph around the gray dotted lines. As the total affected and total killed form undifferentiable corners, so does the UN line. They change very similarly over time, leading to the high correlation values. The second highest correlation is associated with INGO, which also demonstrated these similarities, to a lesser extent. The correlation here is based on a similarity in first derivative. 
 
 # Incidents vs. Gender
+sdfkhl
 
 # Location vs. Motive vs. Attack Context
 

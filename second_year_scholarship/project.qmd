@@ -85,6 +85,14 @@ Finally, project sites are associated with a large number of attack contexted, i
 
 # Reporting Analysis
 
+Upon observing the two correlation matrices above, a few columns have some of the noticably strongest correlations: the unknown columns. For example, location unknown and attack context unknown have a correlation of 0.59. In addition, attack context unknown and motive unknown have a correlation of 0.21. In the first zoomed in correlation matrix, gender unknown has strong correlations with United Nations aid workers involved in incidents, total killed, total wounded, and total affected. All four of these correlations are above 0.5, with the correlation between gender unknown and total affected being an extreme 0.87. 
+
+48% of all aid workers involved in incidents are labeled as "gender unknown." Although the Aid Worker Security Database (AWSD) Codebook mentions that efforts have been made to improve this reporting rate, it is still extremely high proportional to incidents as a whole. 
+
+<iframe src="unknown_gender.html" width="100%" height="600px"></iframe>
+
+This plot demonstrates the connection between UN workers affected and gender unknown reporting. They are clearly most closely connected out of all aid organizations. There could be a variety of reasons as to why this is true. One strong case is the number of different sub organizations comprised under "UN" in this database: FAO, IOM, UNFPA, UNHCR, UNICEF, UNDP, WFP, WHO, as well as UNRWA, OCHA and UNMAS. Although under the same umbrella, each sub-organization most likely has a unique governing body. The layers of leadership here may lead to reporting falling through the cracks. If the UN improves their ghender reporting rates, gender-based analysis can be greatly improved in the future. 
+
 # Conclusions
 
 # Recommendations

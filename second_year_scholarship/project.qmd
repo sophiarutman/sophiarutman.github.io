@@ -18,7 +18,7 @@ Lets first take a look at the different variables included in the dataset. With 
 
 <iframe src="description_samples.html" width="100%" height="600px"></iframe>
 
-Even further, the dataset provides the amount of national and international aid workers harmed during an incident. These numbers tend to be more inaccurate than other columns, as it is harder to decide upon an aid worker's nationality than their organization (which is usually posted on their clothing) or gender. Nonetheless, it is important to gain a broad understanding of countries where the most aid workers are impacted, both international and national. The dashboard below delves into these numbers. 
+Even further, the dataset provides the amount of national and international aid workers harmed during an incident. These numbers tend to be more inaccurate than other columns, as it is harder to decide upon an aid worker's nationality than their organization (which is usually posted on their clothing) or gender. Nonetheless, it is important to gain a broad understanding of countries where the most international and national aid workers are impacted. The dashboard below delves into these numbers. 
 
 <iframe src="choropleth_map_with_dropdown.html" width="100%" height="600px"></iframe>
 
@@ -141,7 +141,7 @@ On the other hand, location did have correlations with various variables, such a
 
 
     Looking only at the incident counts by district (448 total incidents listed their respective district within Afghanistan), we can see that Kabul by far had the highest incident total at 47. Due to the high number of incidents here, humanitarian workers sent to this area should be educated on what to expect based on previous trends. This way they can protect themselves and others. 
-    
+
 2. **Improve reporting of gender and location.** 
    
    These two categories are among the easiest to identify upon arriving on the scene. If these can be reported right away or recorded in some form for later reporting it would greatly strengthen the database, as well improve all organizations' ability to implement the recommendation above. 

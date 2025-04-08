@@ -10,9 +10,9 @@ format:
 
 # Introduction 
 
-The following webpage takes a deep dive into the Aid Worker Security Database, which describes violence against aid workers across the globe. The code categorizes violence against aid workers from different organizations based on attack type and context, country, organization, whether workers were national or international, and gender amongst other variables. 
+The following webpage takes a deep dive into the Aid Worker Security Database, which describes violence against aid workers across the globe. The code categorizes violence against aid workers from different organizations based on attack type and context, country, organization, whether workers were national or international, and gender amongst other variables. The dashboards below describe more about what these categories represent. 
 
-The following analysis looks to guide you through the distribution of these incidents across the globe, and ultimately provide the general viewer with more information about potential actions different organizations can take to ensure they are able to save lives as safely as possible. 
+The following analysis looks to guide you through the distribution of these incidents, and ultimately provide the general viewer with more information about potential actions different organizations can take to ensure they are able to save lives as safely as possible. 
 
 Lets first take a look at the different variables included in the dataset. With each incident provided, the reporter of said incident provides a short description of what happened. Click on any of the points below to understand what these incidents entail. 
 
@@ -26,7 +26,7 @@ Means of attack can also be difficult to ascertain, but to understand the analys
 
 <iframe src="choropleth_map_with_dropdown2.html" width="100%" height="600px"></iframe>
 
-Finally, lets take a look at the humanitarian organization and gender distribution within incidents across the globe.
+Finally, lets take a look at the humanitarian organization and gender distribution within incidents across the globe. The humanitarian organizations are the entities that send aid workers into the field. 
 
 <iframe src="choropleth_map_org.html" width="100%" height="600px"></iframe>
 <iframe src="choropleth_map_with_dropdown3.html" width="100%" height="600px"></iframe>
@@ -135,6 +135,13 @@ On the other hand, location did have correlations with various variables, such a
 
     This may decrease specifically the UN's correlation with total aid workers affected. With proper training, hopefully they can protect their humanitarian workers more often and more efficiently. 
 
+    Lets look at a geographic example within Afghanistan: 
+
+    <iframe src="afghanistan_incidents_map_with_zeroes.html" width="100%" height="600px"></iframe>
+
+
+    Looking only at the incident counts by district (448 total incidents listed their respective district within Afghanistan), we can see that Kabul by far had the highest incident total at 47. Due to the high number of incidents here, humanitarian workers sent to this area should be educated on what to expect based on previous trends. This way they can protect themselves and others. 
+    
 2. **Improve reporting of gender and location.** 
    
    These two categories are among the easiest to identify upon arriving on the scene. If these can be reported right away or recorded in some form for later reporting it would greatly strengthen the database, as well improve all organizations' ability to implement the recommendation above. 
